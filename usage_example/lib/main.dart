@@ -1,5 +1,15 @@
 import 'package:flutter/material.dart';
 
+import 'package:disposable_macro/disposable_macro.dart';
+
+@Disposable()
+class User {
+  final String name;
+  final int age;
+
+  User(this.name, this.age);
+}
+
 void main() {
   runApp(const MainApp());
 }
