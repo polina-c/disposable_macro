@@ -1,2 +1,3 @@
 /logs
 **/pubspec.lock
+.DS_Store
