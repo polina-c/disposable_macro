@@ -7,9 +7,7 @@ class TestUser {
   final String name;
   final int age;
 
-  TestUser(this.name, this.age) {
-    print('TestUser constructor');
-  }
+  TestUser(this.name, this.age);
 }
 
 void main() {

@@ -14,8 +14,8 @@ macro class Disposable implements ClassDefinitionMacro {
     final constructors = await classBuilder.constructorsOf(theClass);
     // ignore: deprecated_member_use, better alternative is under construction
     //classBuilder.resolveIdentifier(Uri(scheme: 'package:flutter/src/foundation/memory_allocations.dart path: ''), 'FlutterMemoryAllocations');
-    final library = theClass.library.uri.toString();
-    final className = theClass.identifier.name;
+    // final library = theClass.library.uri.toString();
+    // final className = theClass.identifier.name;
     for (var c in constructors) {
       final builder = await classBuilder.buildConstructor(c.identifier);
       builder.augment(body: FunctionBodyCode.fromParts([
@@ -28,7 +28,7 @@ macro class Disposable implements ClassDefinitionMacro {
         //     );
         //   }
         // ''',
-        'assert(false, "hello from macro");',
+        '{assert(false, "hello from macro");}',
 
         // '{\n',
         //  // 'print("instrumentation for ${clazz.identifier.name}");\n',
