@@ -4,12 +4,14 @@ import 'package:disposable_macro/src/disposable_macro.dart';
 
 @Disposable()
 class TestUser {
-  final String name;
-  final int age;
+  String? name;
+  int? age;
 
-  TestUser(this.name, this.age);
+  TestUser();
 }
 
 void main() {
-  test('-', () {});
+  test('-', () {
+    TestUser user = TestUser();
+  });
 }
