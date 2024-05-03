@@ -9,3 +9,4 @@ Issues:
 Disposables: https://github.com/flutter/flutter/issues/137435
 Augmenting constructors: https://github.com/dart-lang/language/issues/3554
 Analyzer crash: https://github.com/dart-lang/sdk/issues/55596
+Lack of details: https://github.com/dart-lang/sdk/issues/55610
