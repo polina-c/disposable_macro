@@ -29,7 +29,7 @@ macro class Disposable implements ClassDefinitionMacro {
           //     );
           //   }
           // ''',
-          '{assert(false, "hello from macro");}',
+          '{throw "hello from macro";}',
 
           // '{\n',
           //  // 'print("instrumentation for ${clazz.identifier.name}");\n',
